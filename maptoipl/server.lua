@@ -5,7 +5,6 @@
 ]]
 
 -- CONFIG
-local NEWMODELS_NAME = "newmodels" -- Resource name
 local NEWMODELS_CUSTOM_OBJECT_DATA = "objectID" -- Custom object ID data name
 
 local function hasPermission(executor)
