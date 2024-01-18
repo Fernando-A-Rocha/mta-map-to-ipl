@@ -19,7 +19,8 @@ local function outputMsg(msg, executor)
     end
 end
 
-
+-- Euler angles to quaternion
+-- posted by thisdp in https://forum.multitheftauto.com/topic/98228-func-euler-angles-into-quaternions/
 local function mathSign(x, a)
 	return (a < 0) and -math.abs(x) or math.abs(x)
 end
