@@ -11,3 +11,5 @@ Instructions:
 - Place the `maptoipl` resource folder in your MTA:SA server's resources folder
 - Start the resource with `start maptoipl` in the server console
 - Use the command `maptoipl <map name>` in-game or in the server console to convert a map (must be a logged in Admin)
+
+Thank you to [zeko](https://dyom.gtagames.nl/profile/34385) for suggesting this idea and testing some converted maps
