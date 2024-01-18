@@ -1,0 +1,8 @@
+<meta>
+    <info author="Fernando"
+        name="Map to IPL"
+        description="converts MTA Map format to GTA:SA IPL format, compatible with newmodels"
+        version="1.0.0"
+        type="script"/>
+    <script src="server.lua" type="server"/>
+</meta>
