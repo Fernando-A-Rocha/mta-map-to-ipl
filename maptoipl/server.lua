@@ -8,7 +8,8 @@
 local NEWMODELS_CUSTOM_OBJECT_DATA = "objectID" -- Custom object ID data name
 
 local function hasPermission(executor)
-    return isObjectInACLGroup("user."..getAccountName(getPlayerAccount(executor)), aclGetGroup("Admin"))
+    local accountName = getAccountName(getPlayerAccount(executor)
+    return accountName == "Console" or isObjectInACLGroup("user."..accountName), aclGetGroup("Admin"))
 end
 
 local function outputMsg(msg, executor)
