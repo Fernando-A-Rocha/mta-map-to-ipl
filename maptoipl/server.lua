@@ -7,11 +7,6 @@
 -- CONFIG
 local NEWMODELS_CUSTOM_OBJECT_DATA = "objectID" -- Custom object ID data name
 
-local function hasPermission(executor)
-    local accountName = getAccountName(getPlayerAccount(executor))
-    return accountName == "Console" or isObjectInACLGroup("user."..accountName, aclGetGroup("Admin"))
-end
-
 local function outputMsg(msg, executor)
     msg = "[Map to IPL] "..msg
     outputServerLog(msg)
@@ -49,10 +44,6 @@ local function quaternion(x, y, z)
 end
 
 addCommandHandler("maptoipl", function(executor, cmd, mapName)
-    if not hasPermission(executor) then
-        outputMsg("No permission to execute /"..cmd.. " (account: "..getAccountName(getPlayerAccount(executor))..")", executor)
-        return
-    end
     if not mapName then
         outputMsg("Syntax: /"..cmd.." <map name (no spaces, it should match map resource name)>", executor)
         return
